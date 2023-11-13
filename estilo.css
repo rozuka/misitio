@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 30;
+    position: relative; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+
+main{
+  background-color: rgb(8, 9, 10);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
+
+.logo {
+  cursor: pointer;
+  order: 2;
+  margin-left: auto;
+}
+
+
+nav{
+  order: 1;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+.nav_links li button{
+  transition: all 0.3s ease 0s;
+}
+.nav_links li .menu:hover{
+padding: 9px 25px;
+background-color: rgb(255, 255, 255);
+border: none;
+border-radius: 50px;
+cursor: pointer;
+}
+
+button.active {
+  padding: 9px 10px;
+  background-color: rgb(254, 255, 255);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.menu{
+  padding: 10px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.yo{
+
+font-family: 'Courier New', Courier, monospace;
+
+
+}
+ 
+
+
+
+li .menu, #itab {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(9, 10, 11);
+    text-decoration: none;
+}
+
+.contenido{
+  display: none;
+  animation: fadeEffect 1s;
+  
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+.laptop{
+  width: 1400px;
+  height: 400px;
+  margin: 100px 40px;
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: xx-large;
+  
+  
+
+}
+
+.nos{
+   
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: xx-large;
+
+
+
+}
+
+
+  .lol{
+
+    width: 100%;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    justify-content:left;
+    background-color: #fefefe;
+    
+  }
+  
+
+
+
+
+
+  
+
+.h1{
+
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+   
+  .misionsito{
+
+    width: 400px;
+    height: 300px;
+
+    display: inline;
+
+    font-size:larger;
+
+   text-decoration-color: #ffffff;
+
+   float: left;
+  
+  }
+
+
+  .hole{
+
+    width: 100%;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    justify-content:left;
+    
+
+  }
+
+  
+  .hombre{
+
+    width: 400px;
+    height: 300px;
+
+    display: inline;
+
+    font-size:larger;
+
+   text-decoration-color: #ffffff;
+
+   float: right;
+   background-color: white;
+
+  }
+
+  
+  
+  
+  .otra{
+
+    width: 100%;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    justify-content:left;
+    
+
+  }
+
+  .nose{
+
+    width: 400px;
+    height: 300px;
+
+    display: inline;
+
+    font-size:larger;
+
+   text-decoration-color: #ffffff;
+
+   float: left;
+   background-color: white;
+
+  }
+
+  .yo{
+
+    width: 100%;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    justify-content:left;
+    background-color: #d7d8ee;
+  }
+
+
+  .hio{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    background-color: white;
+
+
+
+
+
+
+    
+  }
+
+
+.intro{
+  z-index: 1;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+  font-size: 7em;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  position: relative;
+  animation: text 3s 1;
+  background-color: rgb(8, 9, 10);
+  
+}
+span{
+  z-index: 1;
+  font-family: 'Inconsolata';
+  font-weight: 600;
+  font-size: 1.5em;
+  justify-content: center;
+  color: rgb(42, 56, 56);
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+  animation: text2 3s ;
+}
+
+@keyframes text2 {
+  0%{
+    opacity: 0;
+   }
+  40%{
+    opacity: 1;
+  }
+  }
+
+
+@keyframes text {
+  0%{
+    letter-spacing: 20px;
+    color: rgb(8, 9, 10);
+    margin-top: -90px;
+  }  
+  30%{
+    letter-spacing: 8px;
+    margin-top: -90px;
+  }
+ 
+}
+
+
+
+.let{
+  padding: 20px;
+}
+  
+
+
+
+.title {
+margin-bottom: 40px;
+font-size: 60px;
+font-weight: 600;
+text-transform: uppercase;
+color: white;
+}
+
+p{
+margin-bottom: 40px;
+font-size: 18px;
+color: rgb(0, 0, 0);
+padding: 0 100px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.content{
+background-image:linear-gradient(rgba(231, 220, 220, 0.4),rgba(249, 243, 243, 0.4)), url(startup-3267505_1920.jpg); 
+background-position: center center;
+background-repeat: no-repeat;
+background-size: 90%;
+height: 40vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 200px;
+}
+
+.laptop{
+  
+  background-image:linear-gradient(rgba(242, 242, 242, 0.4),rgba(0,0,0,0.4)), url(laptop-820274_1920.jpg); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px
+  
+}
+
+
+.nos{
+  background-image:linear-gradient(rgba(251, 249, 249, 0.4),rgba(0,0,0,0.4)), url(fondo\ nosotros.jpg); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px
+  
+}
+
+
+
+.boton:hover {
+  background-color: #000000;
+  color: white;
+}
+
+
+.loco:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.container-all{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 600MS;
+
+}
+
+.container-all:target{
+  background: rgba(0,0,0,0.8);
+  visibility: visible;
+  opacity: 1;
+}
+
+.container-all:target .popup{
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%,-50%);
+  visibility: visible;
+}
+
+.popup{
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  background: white;
+  visibility: hidden;
+  top: -800%;
+  left: -800%;
+  transform: rotate(90deg) translate(-150%,230%);
+  transition: all 600ms;
+}
+.img{
+  width: 40%;
+  background-image: url(logo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container-text{
+  width: 60%;
+  padding: 50px;
+  overflow-y: auto;
+}
+
+.container-text h1{
+  font-size: 30px;
+}
+
+.container-text p{
+  margin-top: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+
+#tabla-precios {
+  display:inline-block;
+  width:100%;
+  margin-top:50px
+ }
+ 
+ /*Columnas*/
+ 
+ .precio-col {
+  display:inline-block;
+  background-color:#f3f3f3;
+  width:100%;
+  max-width:500px;
+  border-radius:10px;
+  margin-bottom:50px;
+  box-shadow: 0px 2px 5px #ddd
+ }
+ 
+ @media screen and (min-width:768px) {
+  .precio-col {
+  width:32%;
+  float:left;
+  margin-right:2%
+  }
+  
+  .precio-col:last-child {
+  margin-right:0
+  }
+ }
+ 
+ /*Headers*/
+ 
+ .precio-col-header {
+  background-color:#333;
+  padding:20px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px
+ }
+ 
+ .precio-col:nth-child(2) .precio-col-header {
+  background-color:#010101
+ }
+ 
+ .precio-col-header h3 {
+  color:#f3f3f3;
+  text-align:center;
+  font-size:30px;
+  font-weight:600;
+  margin-bottom:0
+ }
+ 
+ .precio-col-header p {
+  text-align:center;
+  color:#f3f3f3;
+  font-size:14px;
+  margin-bottom:0
+ }
+ 
+ /*Características*/
+ 
+ .precio-col-features {
+  padding: 0 20px 20px 20px
+ }
+ 
+ .precio-col-features p {
+  padding:20px 0;
+  margin:0;
+  text-align:center;
+  border-top:1px solid #ddd
+ }
+ 
+ .precio-col-features p:first-child,
+ .precio-col-features p:last-child {
+  border-top:none
+ }
+ 
+ 
+ 
+ .precio-col-comprar {
+  padding:10px;
+  max-width:250px;
+  text-align:center;
+  background-color:#040403;
+  margin: 0 auto 20px;
+  border-radius:10px;
+  border: 2px solid #000000;
+  transition: all 0.3s
+ }
+ 
+ .precio-col-comprar a {
+  color:#f3f3f3;
+  padding:10px;
+  font-size:20px;
+  text-transform:uppercase;
+  transition: all 0.3s
+ }
+ 
+ .precio-col-comprar:hover {
+  background-color:#f3f3f3;
+  transition: all 0.3s
+ }
+ 
+ .precio-col-comprar:hover a {
+  color:#090908;
+  transition: all 0.3s
+ }
+
